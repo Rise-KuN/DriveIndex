@@ -1,5 +1,5 @@
 // Redesigned by telegram.dog/TheFirstSpeedster at https://www.npmjs.com/package/@googledrive/index which was written by someone else, credits are given on Source Page.
-// v1.0.4
+// v1.0.5
 // Initialize the page
 function init() {
 	document.siteName = $('title').html();
@@ -181,8 +181,8 @@ function nav(path) {
 <div class="ct-wrapper">
     <div class="header logo-wrapper section" id="Logo-section">
         <div id="header-inner">
-            <a href="https://www.celestial-dragons.com/" class="custom-logo-link" rel="home" aria-current="page">
-                <img width="1200" height="500" src="https://www.celestial-dragons.com/wp-content/uploads/2022/10/Logo-1200x500-1.png" class="custom-logo" alt="Celestial Dragons" decoding="async" fetchpriority="high">
+            <a href="${UI.website_link}" class="custom-logo-link" rel="home" aria-current="page">
+                <img width="1200" height="500" src="${UI.login_image}" class="custom-logo" alt="${UI.website_name}" decoding="async" fetchpriority="high">
             </a> 
         </div>
     </div>
@@ -347,7 +347,7 @@ function list(path, id = '', fallback = false) {
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb" id="folderne">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>`;
+          <li class="breadcrumb-item"><a href="/0:/">Home</a></li>`;
 
 	var navfulllink = window.location.pathname;
 	var navarray = navfulllink.trim('/').split('/');
@@ -1169,7 +1169,7 @@ async function fallback(id, type) {
             <p>The requested URL was not found on this server. That’s all we know.</p>
             <div class="card-text text-center">
               <div class="btn-group text-center">
-                <a href="/" type="button" class="btn btn-primary">Homepage</a>
+                <a href="/0:/" type="button" class="btn btn-primary">Homepage</a>
               </div>
             </div><br>
           </div>
@@ -1244,7 +1244,7 @@ async function file(path) {
             <p>The requested URL was not found on this server. That’s all we know.</p>
             <div class="card-text text-center">
               <div class="btn-group text-center">
-                <a href="/" type="button" class="btn btn-primary">Homepage</a>
+                <a href="/0:/" type="button" class="btn btn-primary">Homepage</a>
               </div>
             </div><br>
           </div>
