@@ -187,6 +187,15 @@ function nav(path) {
 </div>
 </div>
 </nav>
+<div class="ct-wrapper">
+    <div class="header logo-wrapper section" id="Logo-section">
+        <div id="header-inner">
+            <a href="https://www.celestial-dragons.com/" class="custom-logo-link" rel="home" aria-current="page">
+                <img width="1200" height="500" src="https://www.celestial-dragons.com/wp-content/uploads/2022/10/Logo-1200x500-1.png" class="custom-logo" alt="Celestial Dragons" decoding="async" fetchpriority="high">
+            </a> 
+        </div>
+    </div>
+</div>
 `;
 
 	// Personal or team
