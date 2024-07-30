@@ -158,8 +158,8 @@ function nav(path) {
 	// Dropdown to select different drive roots.
 	html += `<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${UI.nav_link_2}</a><div class="dropdown-menu" aria-labelledby="navbarDropdown">`;
 	names.forEach((name, idx) => {
-		html += `<a class="dropdown-item"  href="${UI.drop_nav_link_3}">${UI.nav_link_3}</a>`;
-        html += `<a class="dropdown-item"  href="${UI.drop_nav_link_4}">${UI.nav_link_4}</a>`;
+		html += `<a class="dropdown-item"  href="/${idx}:/${UI.drop_nav_link_3}">${UI.nav_link_3}</a>`;
+        html += `<a class="dropdown-item"  href="/${idx}:/${UI.drop_nav_link_4}">${UI.nav_link_4}</a>`;
 	});
 	html += `</div></li>`;
 
